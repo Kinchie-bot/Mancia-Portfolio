@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinchie S.mancia BSIT Industry-Ready Portfolio</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="matrixCanvas" aria-hidden="true"></canvas>
+    <div id="scanlinesLayer" class="matrix-scanlines" aria-hidden="true"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home"><i class="fa-solid fa-graduation-cap text-primary me-2"></i>Mr Mancia Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#problem-solving">Problem-Solving</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#employability">Employability</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-2"><button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Switch theme"><i class="fa-solid fa-moon" aria-hidden="true"></i><span class="theme-toggle-label">Dark mode</span></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section / HOME -->
+    <header id="home" class="hero-section text-white d-flex align-items-center">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <span class="badge bg-primary mb-3 px-3 py-2 fs-6">Datamex College of Saint Adeline</span>
+                    <h1 class="display-4 fw-bold mb-3">Hi, I'm <span class="text-primary" style="white-space:nowrap">Kinchie S. Mancia</span></h1>
+                    <p class="lead mb-4">IT Support Professional & Web Developer specializing in technical troubleshooting, helpdesk support, and building dynamic web solutions. Ready to deliver reliable digital systems and technical operations.</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+                        <a href="#projects" class="btn btn-primary btn-lg shadow-sm"><i class="fa-solid fa-code me-2"></i>View My Projects</a>
+                        <a href="Resume .pdf" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#resumeModal"><i class="fa-solid fa-file-arrow-down me-2"></i>Download Resume</a>
+                    </div>
+                </div>
+                <div class="col-md-5 text-center mt-4 mt-md-0">
+                    <div class="profile-card p-3 rounded-4">
+                        <img src="Picture.jpg" alt="Kinchie S. Mancia" class="profile-photo img-fluid rounded-circle mb-3 border border-3 border-primary" tabindex="0" role="button" aria-label="View a larger photo of Kinchie S. Mancia">
+                        <h3 class="mb-2">Kinchie S. Mancia</h3>
+                        <p class="profile-role text-muted mb-3">Web Developer & IT Support</p>
+                        <div class="profile-links d-flex justify-content-center gap-3">
+                            <a href="https://github.com" target="_blank" class="text-light"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.facebook.com/MaNcIa.KiNcHie04/" target="_blank" class="text-light"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" class="text-light"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT ME Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-title text-center mb-5">
+                        <h2 class="fw-bold">Professional Profile & About Me</h2>
+                        <hr class="w-25 mx-auto bg-primary">
+                    </div>
+                    <div class="card shadow-sm border-0 p-4 rounded-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-4 text-center mb-3 mb-md-0">
+                                <img src="Picture.jpg" alt="Workspace" class="img-fluid rounded-3 shadow">
+                            </div>
+                            <div class="col-md-8">
+                                <h3 class="h4 fw-bold text-primary mb-3">BSIT Background & Career Goals</h3>
+                                <p class="text-secondary">
+                                    I am a dedicated Bachelor of Science in Information Technology (BSIT) graduate from Datamex College of Saint Adeline with technical competencies in IT support, web development, hardware/software troubleshooting, and network maintenance. Throughout my academic program, I have focused on bridging theoretical concepts with practical deployment, building responsive web applications, and providing end-user technical support.
+                                </p>
+                                <p class="text-secondary">
+                                    My professional values emphasize clean code architecture, efficient system troubleshooting, user-centric interface design, and reliable technical service. I am eager to contribute my technical acumen to an innovative team as an IT Support Specialist or Web Developer.
+                                </p>
+                                <div class="row mt-4">
+                                    <div class="col-sm-6">
+                                        <ul class="list-unstyled">
+                                            <li><i class="fa-solid fa-check text-primary me-2"></i><strong>Degree:</strong> BS Information Technology</li>
+                                            <li><i class="fa-solid fa-check text-primary me-2"></i><strong>Specialization:</strong> Web development and IT Support</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <ul class="list-unstyled">
+                                            <li><i class="fa-solid fa-check text-primary me-2"></i><strong>Email:</strong> manciakinchie1@gmial.com</li>
+                                            <li><i class="fa-solid fa-check text-primary me-2"></i><strong>Status:</strong> Available for Employment</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS Inventory Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2 class="fw-bold">Technical Skills Inventory</h2>
+                <p class="text-muted">Verified competencies acquired throughout the BSIT program</p>
+                <hr class="w-25 mx-auto bg-primary">
+            </div>
+            <div class="row g-4">
+                <!-- Web Development -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 p-3">
+                        <div class="card-body">
+                            <h4 class="h5 fw-bold text-primary mb-3"><i class="fa-solid fa-globe me-2"></i>Web Development</h4>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1"><span>HTML5 / CSS3 / JS</span><span>Intermediate</span></div>
+                                <div class="progress" style="height: 8px;"><div class="progress-bar bg-success" style="width: 75%"></div></div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1"><span>Bootstrap / React</span><span>Intermediate</span></div>
+                                <div class="progress" style="height: 8px;"><div class="progress-bar bg-success" style="width: 75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Database & SQL -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 p-3">
+                        <div class="card-body">
+                            <h4 class="h5 fw-bold text-primary mb-3"><i class="fa-solid fa-database me-2"></i>Database & SQL</h4>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1"><span>MySQL / PostgreSQL</span><span>Intermediate</span></div>
+                                <div class="progress" style="height: 8px;"><div class="progress-bar bg-warning" style="width: 75%"></div></div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1"><span>ERD / Database Design</span><span>Intermediate</span></div>
+                                <div class="progress" style="height: 8px;"><div class="progress-bar bg-warning" style="width: 75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Networking & Troubleshooting -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 p-3">
+                        <div class="card-body">
+                            <h4 class="h5 fw-bold text-primary mb-3"><i class="fa-solid fa-network-wired me-2"></i>Networking & Support</h4>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1"><span>TCP/IP, DNS, Routing</span><span>Intermediate</span></div>
+                                <div class="progress" style="height: 8px;"><div class="progress-bar bg-info" style="width: 75%"></div></div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1"><span>PC Troubleshooting</span><span>Intermediate</span></div>
+                                <div class="progress" style="height: 8px;"><div class="progress-bar bg-info" style="width: 75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tools & Cloud -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 p-3">
+                        <div class="card-body">
+                            <h4 class="h5 fw-bold text-primary mb-3"><i class="fa-solid fa-cloud me-2"></i>Tools & Deployment</h4>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1"><span>Git & GitHub</span><span>Intermediate</span></div>
+                                <div class="progress" style="height: 8px;"><div class="progress-bar bg-secondary" style="width: 75%"></div></div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1"><span>Cloud Hosting (Vercel)</span><span>Intermediate</span></div>
+                                <div class="progress" style="height: 8px;"><div class="progress-bar bg-secondary" style="width: 75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS Gallery: replace each placeholder with your certificate image -->
+    <section id="certifications" class="certifications-section py-5 bg-light">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2 class="fw-bold">Certifications & Continued Learning</h2>
+                <p class="text-muted">Selected courses and credentials supporting my technical foundation.</p>
+                <hr class="w-25 mx-auto bg-primary">
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4"><article class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden"><img class="certificate-image" src="assets/certificate-digital-office.png" alt="Certificate for Digital Office Mastery: Essential Skills for Computer and Administrative Staff"><div class="card-body"><span class="badge bg-primary mb-2">Certification</span><h3 class="h5 fw-bold mb-0">Digital Office Mastery</h3></div></article></div>
+                <div class="col-md-4"><article class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden"><img class="certificate-image" src="assets/certificate-linux-admin.png" alt="Certificate for Linux and System Administration: Master the Command Line"><div class="card-body"><span class="badge bg-success mb-2">Certification</span><h3 class="h5 fw-bold mb-0">Linux &amp; System Administration</h3></div></article></div>
+                <div class="col-md-4"><article class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden"><img class="certificate-image" src="assets/certificate-powershell-security.png" alt="Certificate for Powershell Unlocked: Network Security Made Easy"><div class="card-body"><span class="badge bg-danger mb-2">Certification</span><h3 class="h5 fw-bold mb-0">PowerShell Unlocked</h3></div></article></div>
+                <div class="col-md-4"><article class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden"><iframe class="certificate-pdf-preview" src="assets/certificate-upskill-record-1.pdf#toolbar=0&amp;navpanes=0&amp;view=FitH" title="Preview of UpskillTechPH verified record 1"></iframe><div class="card-body"><span class="badge bg-warning text-dark mb-2">Certification</span><h3 class="h5 fw-bold">UpskillTechPH Record 1</h3><a class="btn btn-outline-primary btn-sm mt-auto align-self-start" href="assets/certificate-upskill-record-1.pdf" target="_blank" rel="noopener">Open certificate PDF ↗</a></div></article></div>
+                <div class="col-md-4"><article class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden"><iframe class="certificate-pdf-preview" src="assets/certificate-upskill-record-2.pdf#toolbar=0&amp;navpanes=0&amp;view=FitH" title="Preview of UpskillTechPH verified record 2"></iframe><div class="card-body"><span class="badge bg-secondary mb-2">Certification</span><h3 class="h5 fw-bold">UpskillTechPH Record 2</h3><a class="btn btn-outline-primary btn-sm mt-auto align-self-start" href="assets/certificate-upskill-record-2.pdf" target="_blank" rel="noopener">Open certificate PDF ↗</a></div></article></div>
+                <div class="col-md-4"><article class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden"><iframe class="certificate-pdf-preview" src="assets/certificate-upskill-record-3.pdf#toolbar=0&amp;navpanes=0&amp;view=FitH" title="Preview of UpskillTechPH verified record 3"></iframe><div class="card-body"><span class="badge bg-info text-dark mb-2">Certification</span><h3 class="h5 fw-bold">UpskillTechPH Record 3</h3><a class="btn btn-outline-primary btn-sm mt-auto align-self-start" href="assets/certificate-upskill-record-3.pdf" target="_blank" rel="noopener">Open certificate PDF ↗</a></div></article></div>
+                <div class="col-md-4"><article class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden"><iframe class="certificate-pdf-preview" src="assets/certificate-upskill-record-4.pdf#toolbar=0&amp;navpanes=0&amp;view=FitH" title="Preview of UpskillTechPH verified record 4"></iframe><div class="card-body"><span class="badge bg-primary mb-2">Certification</span><h3 class="h5 fw-bold">UpskillTechPH Record 4</h3><a class="btn btn-outline-primary btn-sm mt-auto align-self-start" href="assets/certificate-upskill-record-4.pdf" target="_blank" rel="noopener">Open certificate PDF ↗</a></div></article></div>
+                <div class="col-md-4"><article class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden"><iframe class="certificate-pdf-preview" src="assets/certificate-upskill-record-5.pdf#toolbar=0&amp;navpanes=0&amp;view=FitH" title="Preview of UpskillTechPH verified record 5"></iframe><div class="card-body"><span class="badge bg-success mb-2">Certification</span><h3 class="h5 fw-bold">UpskillTechPH Record 5</h3><a class="btn btn-outline-primary btn-sm mt-auto align-self-start" href="assets/certificate-upskill-record-5.pdf" target="_blank" rel="noopener">Open certificate PDF ↗</a></div></article></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2 class="fw-bold">Featured IT Projects</h2>
+                <p class="text-muted">Demonstrating practical application development, databases, and data analysis</p>
+                <hr class="w-25 mx-auto bg-primary">
+            </div>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                        <img src="assets/network-equipment.jpeg" class="card-img-top" alt="Network switches and connected cables in a server rack">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-primary align-self-start mb-2">IT Support</span>
+                            <h4 class="h5 fw-bold">IP Configuration and Recabling the LAN Port</h4>
+                            <p class="text-muted small">physically replacing or repairing Ethernet wires and setting up either dynamic (DHCP) or static IPv4 addresses.</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#project1Modal"><i class="fa-solid fa-book-open me-1"></i>View README</button>
+                                <a href="https://github.com" target="_blank" class="text-dark fs-5"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                        <img src="assets/lab-usage-analytics.webp" class="card-img-top" alt="Analytics dashboard showing equipment and facility usage data">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-success align-self-start mb-2">Data Analytics</span>
+                            <h4 class="h5 fw-bold">Laboratory Equipment &amp; Usage Analytics</h4>
+                            <p class="text-muted small">Laboratory equipment and facility usage analytics project utilizing tracking scripts, usage log processing, and automated reporting dashboards to optimize lab asset deployment, scheduling efficiency, and operational readiness.</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <a class="btn btn-outline-success btn-sm" href="4A_MANCIA.xlsx" target="_blank" rel="noopener"><i class="fa-solid fa-file-excel me-1"></i>View Excel</a>
+                                <button class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#project2Modal"><i class="fa-solid fa-book-open me-1"></i>View README</button>
+                                <a href="https://github.com" target="_blank" class="text-dark fs-5"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                        <img src="https://sourcebook.ph/storage/company-logos/dANHf8OyR03tv7Bn1rVKFIe3ZX9hwQ11qZJ7iQxt.png" class="card-img-top" alt="PASCOR � Pacific Asia Overseas Shipping Corporation logo" style="height:240px;object-fit:contain;background:#06364a">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-danger align-self-start mb-2">Web Development</span>
+                            <h4 class="h5 fw-bold">PASCOR WEB</h4>
+                            <p class="text-muted small">Custom web development project for Pascor, designed to provide a responsive and user-friendly online experience.</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <a class="btn btn-outline-danger btn-sm" href="https://pacific-ace.com/pascor/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-globe me-1"></i>View Website</a>
+                                <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#pascorReadmeModal"><i class="fa-solid fa-book-open me-1"></i>View README</button>
+                                <a href="https://github.com" target="_blank" class="text-dark fs-5"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEM-SOLVING & CYBERSECURITY CASE Section -->
+    <section id="problem-solving" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2 class="fw-bold">IT Troubleshooting Cases and Problem Solving</h2>
+                <p class="text-muted">Documented IT issues, diagnostic procedures, and solutions</p>
+                <hr class="w-25 mx-auto bg-primary">
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-sm border-0 p-4">
+                        <h3 class="h5 fw-bold text-primary mb-3"><i class="fa-solid fa-wifi me-2"></i>Case 1: Computer Cannot Connect to the Internet</h3>
+                        <div class="text-secondary">
+                            <p class="mb-3"><strong>Problem:</strong> The computer cannot access the internet, and websites do not load.</p>
+                            <strong>Possible Causes:</strong>
+                            <ul class="mb-3">
+                                <li>Wi-Fi is turned off.</li>
+                                <li>The router or modem has a problem.</li>
+                                <li>The network cable is loose.</li>
+                                <li>The computer has incorrect network settings.</li>
+                            </ul>
+                            <strong>Diagnostic Procedure:</strong>
+                            <ol class="mb-3">
+                                <li>Check if Wi-Fi is enabled or the Ethernet cable is connected properly.</li>
+                                <li>Check whether other devices can connect to the same network.</li>
+                                <li>Restart the router and modem.</li>
+                                <li>Open Command Prompt and run <code class="text-primary">ipconfig</code> to check the computer's network configuration.</li>
+                                <li>Test the connection by opening a website.</li>
+                            </ol>
+                            <p class="mb-3"><strong>Solution:</strong><br>Reconnect to the correct Wi-Fi network, secure the network cable, or restart the router. If the problem continues, check the network adapter settings or contact the internet service provider.</p>
+                            <p class="mb-0"><strong>Lesson Learned:</strong> Always check the physical connections and network settings first before performing advanced troubleshooting.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-sm border-0 p-4">
+                        <h3 class="h5 fw-bold text-danger mb-3"><i class="fa-solid fa-computer me-2"></i>Troubleshooting Case #2: Computer Runs Slowly</h3>
+                        <div class="text-secondary">
+                            <p class="mb-3"><strong>Problem:</strong> The computer takes a long time to start and applications respond slowly.</p>
+                            <strong>Possible Causes:</strong>
+                            <ul class="mb-3">
+                                <li>Too many applications are running.</li>
+                                <li>The computer has insufficient RAM.</li>
+                                <li>The storage drive is almost full.</li>
+                                <li>Malware or unnecessary background programs are present.</li>
+                            </ul>
+                            <strong>Diagnostic Procedure:</strong>
+                            <ol class="mb-3">
+                                <li>Open Task Manager by pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Esc</kbd>.</li>
+                                <li>Check CPU, memory, and disk usage.</li>
+                                <li>Identify applications using too many resources.</li>
+                                <li>Check available storage space.</li>
+                                <li>Run a security scan using trusted antivirus software.</li>
+                            </ol>
+                            <p class="mb-3"><strong>Solution:</strong><br>Close unnecessary applications, disable unneeded startup programs, remove temporary files, and uninstall unused software. If the computer still performs poorly, consider upgrading the RAM or storage drive.</p>
+                            <p class="mb-0"><strong>Lesson Learned:</strong> Regular maintenance and monitoring help improve computer performance and prevent unnecessary slowdowns.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-sm border-0 p-4">
+                        <h3 class="h5 fw-bold text-primary mb-3"><i class="fa-solid fa-print me-2"></i>Case 3: Printer Is Not Printing</h3>
+                        <div class="text-secondary">
+                            <p class="mb-3"><strong>Problem:</strong> The printer is connected to the computer, but it does not print documents.</p>
+                            <strong>Possible Causes:</strong>
+                            <ul class="mb-3">
+                                <li>The printer is turned off or offline.</li>
+                                <li>The paper tray is empty or paper is jammed.</li>
+                                <li>The ink or toner is low.</li>
+                                <li>The printer driver is outdated.</li>
+                                <li>Print jobs are stuck in the queue.</li>
+                            </ul>
+                            <strong>Diagnostic Procedure:</strong>
+                            <ol class="mb-3">
+                                <li>Check if the printer is turned on.</li>
+                                <li>Check the paper tray and ink or toner levels.</li>
+                                <li>Confirm that the correct printer is selected.</li>
+                                <li>Check the print queue for pending documents.</li>
+                                <li>Print a test page.</li>
+                            </ol>
+                            <p class="mb-3"><strong>Solution:</strong><br>Turn on the printer, load paper, clear any paper jams, and replace empty ink or toner cartridges. Clear stuck print jobs and update or reinstall the printer driver if necessary.</p>
+                            <p class="mb-0"><strong>Lesson Learned:</strong> Always check the printer's physical condition, connections, and settings before replacing any hardware.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-sm border-0 p-4">
+                        <h3 class="h5 fw-bold text-danger mb-3"><i class="fa-solid fa-usb me-2"></i>Case 4: Computer Cannot Detect a USB Flash Drive</h3>
+                        <div class="text-secondary">
+                            <p class="mb-3"><strong>Problem:</strong> The computer does not recognize a USB flash drive when it is plugged in.</p>
+                            <strong>Possible Causes:</strong>
+                            <ul class="mb-3">
+                                <li>The USB port is damaged.</li>
+                                <li>The flash drive is faulty.</li>
+                                <li>The USB driver has a problem.</li>
+                                <li>The drive has no assigned drive letter.</li>
+                                <li>The file system is corrupted.</li>
+                            </ul>
+                            <strong>Diagnostic Procedure:</strong>
+                            <ol class="mb-3">
+                                <li>Remove the flash drive and reconnect it.</li>
+                                <li>Try another USB port.</li>
+                                <li>Test the flash drive on another computer.</li>
+                                <li>Open Disk Management in Windows to check whether the drive appears.</li>
+                                <li>Check Device Manager for USB-related errors.</li>
+                            </ol>
+                            <p class="mb-3"><strong>Solution:</strong><br>Try another working USB port, restart the computer, or update the USB device driver. If the drive appears in Disk Management without a drive letter, assign one if appropriate. If the files are important, avoid formatting the drive because it may erase data.</p>
+                            <p class="mb-0"><strong>Lesson Learned:</strong> Test the device and USB port first. Always protect important files before attempting repairs that could cause data loss.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EMPLOYABILITY & CAREER PLAN Section -->
+    <section id="employability" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2 class="fw-bold">Employability & Career Development Plan</h2>
+                <p class="text-muted">Professional growth strategy and AI Usage Log</p>
+                <hr class="w-25 mx-auto bg-primary">
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0 p-4">
+                        <h3 class="h5 fw-bold text-primary mb-3"><i class="fa-solid fa-bullseye me-2"></i>IT Career Goals</h3>
+                        <p><strong>Target Position:</strong> Junior Web Developer / IT Support Specialist</p>
+                        <p><strong>6-Month Goal:</strong> Secure full-time employment in an IT enterprise and complete CompTIA Security+ certification.</p>
+                        <p><strong>1-Year Goal:</strong> Master advanced cloud deployment pipelines (AWS/Azure) and lead minor application modules.</p>
+                        <p><strong>3-Year Goal:</strong> Transition into a Full-Stack Software Engineer / Solutions Architect role.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0 p-4">
+                        <h3 class="h5 fw-bold text-success mb-3"><i class="fa-solid fa-robot me-2"></i>Responsible AI Usage Log</h3>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered">
+                                <thead class="table-dark">
+                                    <tr><th>Task</th><th>AI Assistance</th><th>Verification</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>SQL Query Optimization</td>
+                                        <td>Suggested indexing strategy</td>
+                                        <td>Tested execution time in MySQL Workbench</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CSS Grid Layout</td>
+                                        <td>Drafted responsive card template</td>
+                                        <td>Verified mobile breakpoint rendering</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow-sm border-0 p-4 mt-4">
+                <h3 class="h5 fw-bold text-warning mb-3"><i class="fa-solid fa-video me-2" aria-hidden="true"></i>Career Development Video</h3>
+                <video class="career-development-video" controls preload="metadata" aria-label="Career development video">
+                    <source src="assets/mac-interview.mp4" type="video/mp4">
+                    Your browser does not support HTML video.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & REFLECTION Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-3">Let's Connect</h2>
+                    <p class="text-muted mb-4">I am actively looking for entry-level opportunities in Information Technology. Reach out for collaboration or hiring inquiries!</p>
+                    <div class="d-flex justify-content-center gap-4 mb-5 fs-3">
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" class="text-primary"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.facebook.com/MaNcIa.KiNcHie04/" target="_blank" class="text-primary"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com" target="_blank" class="text-dark"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="card p-4 shadow-sm border-0 bg-light rounded-4">
+                        <h3 class="h5 fw-bold mb-3">Final Reflection Summary</h3>
+                        <p class="text-muted small fst-italic">
+                            "Entering the BSIT program at Datamex, my knowledge of IT was limited to basic computer navigation. Through rigorous training in programming, database architecture, and cybersecurity, my problem-solving abilities have evolved profoundly. I am now fully equipped to build secure software, manage enterprise data, and deliver industry-ready solutions."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-1">&copy; 2026 Kinchie S. Mancia | Datamex College of Saint Adeline BSIT Industry-Ready Portfolio.</p>
+            <p class="small text-muted mb-0">Designed with HTML5, CSS3, JavaScript, and Bootstrap 5.</p>
+        </div>
+    </footer>
+
+    <!-- RESUME MODAL -->
+    <div class="modal fade" id="resumeModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title"><i class="fa-solid fa-file-lines me-2"></i>Professional IT Resume - Kinchie S. Mancia</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="text-center mb-4">
+                        <h3 class="fw-bold">Kinchie S. Mancia</h3>
+                        <p class="text-muted mb-1">BSIT Graduate | Web Developer | IT Support Specialist</p>
+                        <p class="small text-muted">Parañaque City, Metro Manila | manciakinchie1@gmail.com| +63 9674401903</p>
+                    </div>
+                    <hr>
+                    <h5 class="fw-bold text-primary">Professional Summary</h5>
+                    <p class="small">Motivated BSIT graduate with hands-on experience in full-stack web development, database design, and troubleshooting. Proven ability to build functional systems and secure digital environments.</p>
+                    <h5 class="fw-bold text-primary mt-3">Technical Skills</h5>
+                    <p class="small"><strong>Languages:</strong> Python, Java, JavaScript, HTML/CSS, SQL<br><strong>Frameworks:</strong> Bootstrap, Node.js<br><strong>Tools:</strong> Git, GitHub, MySQL Workbench, VS Code</p>
+                    <h5 class="fw-bold text-primary mt-3">Education</h5>
+                    <p class="small mb-0"><strong>Bachelor of Science in Information Technology (BSIT)</strong><br>Datamex College of Saint Adeline (2022 – 2026)</p>
+                    <hr class="my-4">
+                    <h5 class="fw-bold text-primary">Attached Resume — Kinchie S. Mancia</h5>
+                    <iframe class="resume-pdf-preview" src="Resume%20.pdf" title="Kinchie S. Mancia resume PDF"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="Resume%20.pdf" class="btn btn-primary" download="Kinchie-S-Mancia-Resume.pdf"><i class="fa-solid fa-download me-1"></i>Download PDF</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 1 README MODAL -->
+    <div class="modal fade" id="project1Modal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Project 3 README: Network Infrastructure &amp; IT Support System</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <h6>1. Project Overview</h6>
+                    <p class="small text-muted">A comprehensive guide and troubleshooting utility designed to manage network connectivity, IP addressing configurations, and physical LAN cabling diagnostics.</p>
+                    <h6>2. Problem Statement</h6>
+                    <p class="small text-muted">Incorrect IP configurations and damaged physical LAN cables lead to network downtime and slow troubleshooting times.</p>
+                    <h6>3. Technologies Used</h6>
+                    <p class="small text-muted">TCP/IP, DHCP, Static IP, Ethernet (Cat5e/Cat6), RJ45 Connectors, Cable Crimpers, LAN Testers.</p>
+                    <h6>4. System Features</h6>
+                    <ul class="small text-muted">
+                        <li>Dynamic and Static IP Configuration &amp; Troubleshooting</li>
+                        <li>Full Physical LAN Cable Testing and Crimping Procedures</li>
+                        <li>Network Diagnostics and Connectivity Filtering</li>
+                        <li>Automated Network Assistant guidelines for quick troubleshooting</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 2 README MODAL -->
+    <div class="modal fade" id="project2Modal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">Project 2 README: Laboratory Equipment &amp; Usage Analytics</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <h6>1. Project Overview</h6>
+                    <p class="small text-muted">Laboratory equipment and facility usage analytics project utilizing tracking scripts, usage log processing, and automated reporting dashboards to optimize lab asset deployment, scheduling efficiency, and operational readiness.</p>
+                    <h6>2. Problem Statement</h6>
+                    <p class="small text-muted">Inefficient tracking of laboratory assets and manual facility usage logs lead to poor asset deployment, scheduling conflicts, and reduced operational readiness.</p>
+                    <h6>3. Technologies Used</h6>
+                    <p class="small text-muted">Python, SQL, Excel, Automated Tracking Scripts, Data Analytics Dashboards.</p>
+                    <h6>4. System Features</h6>
+                    <ul class="small text-muted">
+                        <li>Laboratory equipment and facility usage tracking scripts</li>
+                        <li>Automated usage log processing and data cleaning</li>
+                        <li>Automated reporting dashboards for asset deployment insights</li>
+                        <li>Optimization tools for scheduling efficiency and operational readiness</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PASCOR WEBSITE README MODAL -->
+    <div class="modal fade" id="pascorReadmeModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title">Project 1 README: PASCOR Website</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <h6>1. Project Overview</h6>
+                    <p class="small text-muted">A comprehensive corporate web platform designed for PASCOR to showcase services, manage client inquiries, and improve online digital presence and accessibility.</p>
+                    <h6>2. Problem Statement</h6>
+                    <p class="small text-muted">Outdated web presence and lack of centralized digital information lead to poor client engagement and inefficient communication channels.</p>
+                    <h6>3. Technologies Used</h6>
+                    <p class="small text-muted">HTML5, CSS3, JavaScript, PHP, MySQL, Bootstrap.</p>
+                    <h6>4. System Features</h6>
+                    <ul class="small text-muted">
+                        <li>Responsive corporate web design and landing pages</li>
+                        <li>Client inquiry and contact form management system</li>
+                        <li>Content management capabilities for company updates and services</li>
+                        <li>Secure backend database connectivity</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="certificate-lightbox" id="certificateLightbox" role="dialog" aria-modal="true" aria-label="Image preview" aria-hidden="true">
+        <button type="button" class="certificate-lightbox-close" aria-label="Close image preview">&times;</button>
+        <div class="certificate-lightbox-content" id="certificateLightboxContent"></div>
+        <p class="certificate-lightbox-hint">Press Esc or click outside the certificate to close</p>
+    </div>
+    <div class="matrix-toolbar" id="matrixToolbar">
+        <button id="audioToggleBtn" type="button" aria-label="Toggle ambient synth"><i id="audioIcon" class="fa-solid fa-volume-xmark"></i><span id="audioStatusText">Sound off</span></button>
+        <button id="snapshotBtn" type="button" aria-label="Save a matrix screenshot"><i class="fa-solid fa-camera"></i> Capture</button>
+        <button id="toggleControlsBtn" type="button"><i class="fa-solid fa-sliders"></i> Matrix controls</button>
+        <button id="fullscreenBtn" type="button" aria-label="Toggle fullscreen"><i class="fa-solid fa-expand"></i></button>
+    </div>
+    <aside class="galaxy-controls-panel" id="controlsPanel" aria-label="Matrix simulation controls" aria-hidden="true">
+        <div class="galaxy-controls-heading"><h2>Matrix controls</h2><button id="closeControlsBtn" type="button" aria-label="Close controls">&times;</button></div>
+        <div class="galaxy-control-group"><label>Color theme</label><div class="d-grid gap-2 galaxy-theme-grid">
+            <button type="button" class="theme-btn active-theme" data-theme="synthwave">Neon synthwave</button><button type="button" class="theme-btn" data-theme="matrix">Matrix terminal</button><button type="button" class="theme-btn" data-theme="obsidian">Obsidian cyber</button><button type="button" class="theme-btn" data-theme="toxic">Toxic wasteland</button><button type="button" class="theme-btn" data-theme="cyberVoid">Cyber void</button>
+        </div></div>
+        <div class="galaxy-control-group"><label for="gridDensitySlider">Hex grid density <output id="gridDensityVal">28px</output></label><input id="gridDensitySlider" type="range" min="18" max="45" step="1" value="28"></div>
+        <div class="galaxy-control-group"><label for="nodeCountSlider">Neural nodes <output id="nodeCountVal">180</output></label><input id="nodeCountSlider" type="range" min="50" max="350" step="10" value="180"></div>
+        <div class="galaxy-control-group"><label for="flowSpeedSlider">Flow speed <output id="flowSpeedVal">1.0x</output></label><input id="flowSpeedSlider" type="range" min="0.2" max="3" step="0.1" value="1"></div>
+        <div class="galaxy-control-group"><label for="bloomSlider">Neon glow <output id="bloomVal">0.75</output></label><input id="bloomSlider" type="range" min="0.1" max="1" step="0.05" value="0.75"></div>
+        <div class="galaxy-control-group"><label for="glitchSlider">Glitch level <output id="glitchVal">MED</output></label><input id="glitchSlider" type="range" min="0" max="10" step="1" value="4"></div>
+        <label class="galaxy-switch"><span>Hex grid</span><input id="toggleHexMesh" type="checkbox" checked></label>
+        <label class="galaxy-switch"><span>Neural nodes and links</span><input id="toggleCircuitNodes" type="checkbox" checked></label>
+        <label class="galaxy-switch"><span>Cursor reticle</span><input id="toggleHudReticle" type="checkbox" checked></label>
+        <label class="galaxy-switch"><span>Scanline effect</span><input id="toggleScanlines" type="checkbox" checked></label>
+        <div class="galaxy-action-row"><button id="pulseWaveBtn" type="button">Trigger pulse</button><button id="randomizeThemeBtn" type="button">Randomize theme</button></div>
+        <div class="galaxy-stats"><span>Nodes <b id="hudNodeCount">180</b></span><span>FPS <b id="hudFpsCounter">--</b></span><span>Grid <b id="hudMeshStatus">ACTIVE</b></span></div>
+        <p class="galaxy-hint">Cursor: <span id="hudMouseCoords">X: 000 | Y: 000</span></p>
+        <p class="galaxy-hint">Move the pointer to interact · click to send a pulse</p>
+    </aside>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="galaxy.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
